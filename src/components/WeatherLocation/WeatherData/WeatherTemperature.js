@@ -1,6 +1,7 @@
 import React from 'react';
 import WeatherIcons from 'react-weathericons';
-import {CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY} from './../constants/weathers';
+import propTypes from 'prop-types';
+import {CLOUD, CLOUDY, SUN, RAIN, SNOW, WINDY} from './../../../constants/weathers';
 
 const stateIconName = weatherState =>{
 
@@ -33,5 +34,10 @@ const WeatherTemperature = ({temperature, weatherState}) => (
         <span> {`${temperature} ºC`} </span>
     </div>
 );
+
+WeatherTemperature.propTypes = {
+    temperature: propTypes.number.isRequired,
+    weatherState: propTypes.string,
+};
 
 export default WeatherTemperature;
