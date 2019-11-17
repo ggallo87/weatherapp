@@ -2,15 +2,16 @@
     width: 400px;
     padding: 15px;
     font-family: 'Roboto', sans-serif;
+    box-shadow: 10px 10px 42px -12px rgba(0,0,0,0.75);
 }
 
 .locationCont{
     width: 100%;
     height: 10px;
     text-align: left;
-    padding-left: 25px;
+    padding-left: 15px;
     color: #888;
-    line-height: 30px;
+    line-height: 10px;
 }
 
 .locationCont h1 {
