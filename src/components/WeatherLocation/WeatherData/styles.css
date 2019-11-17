@@ -1,13 +1,13 @@
 .weatherDataCont{
-    background: blue;
-    width: 400px;
+    background: rgba(210, 210, 210, 0.5);
     height: 100px;
     line-height: 100px;
-    
+    border-radius: 6px;
+    margin: 15px;
+      
 }
 
 .weatherTemperatureCont{
-    background: green;
     width: 60%;
     display: inline-block;
 }
@@ -26,11 +26,21 @@
 }
 
 .wicon{
+    color: rgb(233, 142, 39);
+    padding-top: 15px;
 
 }
 .weatherExtraInfoCont{
-    background: red;
-    widows: 40%;
+    width: 40%;
     display: inline-block;
+    line-height: 28px;
+    text-align: left;
     
+}
+
+.extraInfoText {
+    display: block;
+    color: rgb(26, 98, 165);
+    font-size: 18px;
+    font-weight: bold;
 }
