@@ -14,9 +14,9 @@
 
 .temperature{
 
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold;
-    padding-left: 20px;
+    padding-left: 15px;
     color: #333;
 }
 
@@ -27,7 +27,6 @@
 
 .wicon{
     color: rgb(233, 142, 39);
-    padding-top: 15px;
 
 }
 .weatherExtraInfoCont{
@@ -41,6 +40,6 @@
 .extraInfoText {
     display: block;
     color: rgb(26, 98, 165);
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
