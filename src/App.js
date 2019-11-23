@@ -1,13 +1,18 @@
-import React from 'react';
-import WeatherLocation from './components/WeatherLocation';
+import React, {Component} from 'react';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import LocationList from './components/LocationList';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <WeatherLocation></WeatherLocation>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return(
+            <MuiThemeProvider>
+               <div className="App">
+                  <LocationList/>
+               </div>
+            </MuiThemeProvider>
+    );
+  }
 }
 
 export default App;
