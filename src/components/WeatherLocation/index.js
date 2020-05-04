@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Location from './Location';
 import WeatherData from './WeatherData';
 import transformWeather from '../../services/transformWeather';
@@ -38,10 +39,12 @@ class weatherLocation extends Component {
     
     
     render = () => {
+
+        const { onWeatherLocationClick } = this.props;
         const {city, data} = this.state;
 
         return(
-            <div className='weatherLocationCont'>
+            <div className='weatherLocationCont' onClick= { onWeatherLocationClick }>
                 <Location city={city}/>
                 { data ? <WeatherData data={data}/> : 
                 <CircularProgress size={ 60 } thickness={ 7 }/> }
@@ -50,4 +53,8 @@ class weatherLocation extends Component {
     };
 }
 
+weatherLocation.propTypes = {
+    city: PropTypes.string,
+    onWeatherLocationClick: PropTypes.func,
+}
 export default weatherLocation;
